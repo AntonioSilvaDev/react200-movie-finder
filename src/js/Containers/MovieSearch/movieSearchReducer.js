@@ -31,10 +31,6 @@ export default function MovieSearchReducer( state = defaultState, action){
             return {
                 movie: '',
                 lineItems: action.payload.data,
-                // lineItems: [
-                //     ...state.lineItems,
-                //     { movies }
-                // ]
             };
         }
 

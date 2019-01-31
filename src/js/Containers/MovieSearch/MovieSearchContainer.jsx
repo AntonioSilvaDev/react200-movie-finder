@@ -23,7 +23,6 @@ class MovieSearchContainer extends React.Component {
     }
 
     fetchDataClick(event){
-        console.log(event.target.value);
         const { dispatch } = this.props;
         const { value } = event.target;
         dispatch(fetchMovies(value));

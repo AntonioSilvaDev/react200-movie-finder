@@ -10,7 +10,6 @@ app.use(express.static('dist'));
 app.use(express.static('public'));
 
 const key = process.env.API_KEY;
-console.log(key);
 
 var cacheS = {};
 var s;
