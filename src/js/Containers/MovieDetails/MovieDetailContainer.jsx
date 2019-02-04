@@ -15,12 +15,12 @@ class MovieDetailContainer extends React.Component {
         const { lineItems } = this.props;
         const movie = lineItems.filter(lineItem => lineItem.imdbID == this.props.match.params.id);
         const noImageUrl = 'https://www.freeiconspng.com/uploads/no-image-icon-23.jpg';
-        
+
         return (
             <div className='container'>
                 <div className='jumbotron mt-3 p-4'>
                     <h1 className='display-4 mb-3 text-center'>Movie Details</h1>
-                    <a href='#' className='btn btn-primary' onClick={this.goBack}>Go Back</a>
+                    <a href='#' className='btn btn-primary' id='goBack' onClick={this.goBack}>Go Back</a>
                 </div>
                 <div className='row mt-2 row-no-gutters'>
                     <div className='col-sm-4'>

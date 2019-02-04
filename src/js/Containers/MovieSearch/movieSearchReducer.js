@@ -23,11 +23,6 @@ export default function MovieSearchReducer( state = defaultState, action){
         }
 
         case 'FETCH_MOVIES_FULFILLED' : {
-            const title = action.payload.data.Title;
-            const year = action.payload.data.Year;
-            const rated = action.payload.data.Rated;
-            const movies = action.payload.data;
-
             return {
                 movie: '',
                 lineItems: action.payload.data,
